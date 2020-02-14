@@ -96,7 +96,7 @@ $(document).ready(function () {
      graf = parseInt(getUrlParameter('graf'));
      year = parseInt( getUrlParameter('year'));
     console.log(pat);
-    if (pat == null){
+    if (pat == null || isNaN(pat)){
         console.log("patnull");
          pat = 1;
          graf = 1;
