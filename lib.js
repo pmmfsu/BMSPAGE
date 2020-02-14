@@ -59,7 +59,7 @@ function drawChart() {
     var data = new google.visualization.DataTable();
     data.addColumn('number', 'Month'); // Implicit domain label col.
     data.addColumn('number', 'Comments'); // Implicit series 1 data col.
-
+console.log(data);
 
     for (let i = 1; i < 13; i++) {
         let start;
