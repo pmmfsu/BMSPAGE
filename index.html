@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-firestore.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+</head>
+<body>
+<div class="container-fluid">
+    <div class="ui-widget">
+        <select id="pat">
+            <option value="1">Castelo de Beja</option>
+            <option value="2">Museu Regional de Beja</option>
+            <option value="3">Núcleo Museológico de Beja</option>
+            <option value="4">Igreja Matriz de santa maria</option>
+            <option value="5">Igreja da Se</option>
+            <option value="6">Capela de nossa senhora do Rosario</option>
+            <option value="7">Ermida de santo andre</option>
+            <option value="8">Igreja de nossa senhora dos prazeres</option>
+        </select>
+
+        <select id="graph">
+            <option value="1">Total Comments in Year
+            </option>
+        </select>
+        <select name="yearpicker" id="yearpicker"></select>
+    </div>
+    <div>
+        <h1 id="p"></h1>
+        <h1 id="g"></h1>
+    </div>
+    <div>
+        <div id="curve_chart" style="width: 100%; height: 700px"></div>
+    </div>
+</div>
+<script src="lib.js"></script>
+</body>
+</html>
