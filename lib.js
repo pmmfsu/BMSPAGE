@@ -13,7 +13,7 @@ const firebaseConfig = {
     appId: "1:766880522684:web:dd05603ac846464e048bb9",
     measurementId: "G-5S4WZFHCTW"
 };
-/*var firebaseConfig2 = {
+var firebaseConfig2 = {
     apiKey: "AIzaSyB6mdHIfmYhBv2zWOQifFkVVjv1zinwZ6A",
     authDomain: "clicker-e3699.firebaseapp.com",
     databaseURL: "https://clicker-e3699.firebaseio.com",
@@ -21,7 +21,7 @@ const firebaseConfig = {
     storageBucket: "clicker-e3699.appspot.com",
     messagingSenderId: "329920012519",
     appId: "1:329920012519:web:6b0abee932cebb0d86c242"
-};*/
+};
 var getUrlParameter = function getUrlParameter(sParam) {
     var sPageURL = window.location.search.substring(1),
         sURLVariables = sPageURL.split('&'),
@@ -86,7 +86,7 @@ function drawChart() {
 }
 
 $(document).ready(function () {
-    firebase.initializeApp(firebaseConfig);
+    firebase.initializeApp(firebaseConfig2);
     for (let i = new Date().getFullYear(); i > 2010; i--) {
         $('#yearpicker').append($('<option />').val(i).html(i));
     }
@@ -94,7 +94,7 @@ $(document).ready(function () {
      pat  = parseInt(getUrlParameter('pat'));
      graf = parseInt(getUrlParameter('graf'));
      year = parseInt( getUrlParameter('year'));
-
+    console.log(pat);
     if (pat == null){
          pat = 1;
          graf = 1;
