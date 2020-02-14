@@ -98,7 +98,7 @@ $(document).ready(function () {
     console.log(pat);
     console.log(pat == null);
     console.log(isNaN(pat));
-    if (pat == null) || isNaN(pat)){
+    if (pat == null || isNaN(pat)){
         console.log("patnull");
          pat = 1;
          graf = 1;
