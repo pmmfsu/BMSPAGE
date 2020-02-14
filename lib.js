@@ -13,15 +13,6 @@ const firebaseConfig = {
     appId: "1:766880522684:web:dd05603ac846464e048bb9",
     measurementId: "G-5S4WZFHCTW"
 };
-var firebaseConfig2 = {
-    apiKey: "AIzaSyB6mdHIfmYhBv2zWOQifFkVVjv1zinwZ6A",
-    authDomain: "clicker-e3699.firebaseapp.com",
-    databaseURL: "https://clicker-e3699.firebaseio.com",
-    projectId: "clicker-e3699",
-    storageBucket: "clicker-e3699.appspot.com",
-    messagingSenderId: "329920012519",
-    appId: "1:329920012519:web:6b0abee932cebb0d86c242"
-};
 var getUrlParameter = function getUrlParameter(sParam) {
     var sPageURL = window.location.search.substring(1),
         sURLVariables = sPageURL.split('&'),
@@ -87,7 +78,7 @@ console.log(data);
 
 $(document).ready(function () {
     console.log("start");
-    firebase.initializeApp(firebaseConfig2);
+    firebase.initializeApp(firebaseConfig);
     for (let i = new Date().getFullYear(); i > 2010; i--) {
         $('#yearpicker').append($('<option />').val(i).html(i));
     }
