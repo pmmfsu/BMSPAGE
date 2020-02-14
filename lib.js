@@ -101,6 +101,7 @@ $(document).ready(function () {
          pat = 1;
          graf = 1;
          year = 2020;
+         window.location.href = "index.html?pat=" + pat + "&graf="+graf+"&year="+year;
     }
     $("#pat").val(pat);
     $("#graph").val(graf);
