@@ -86,6 +86,7 @@ function drawChart() {
 }
 
 $(document).ready(function () {
+    console.log("start");
     firebase.initializeApp(firebaseConfig2);
     for (let i = new Date().getFullYear(); i > 2010; i--) {
         $('#yearpicker').append($('<option />').val(i).html(i));
@@ -96,6 +97,7 @@ $(document).ready(function () {
      year = parseInt( getUrlParameter('year'));
     console.log(pat);
     if (pat == null){
+        console.log("patnull");
          pat = 1;
          graf = 1;
          year = 2020;
